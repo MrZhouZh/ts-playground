@@ -1,5 +1,6 @@
 import './LazyMan'
 import './LinkedList'
+import './promiseLimit'
 
 export function setupCounter(element: HTMLButtonElement) {
   let counter = 0
