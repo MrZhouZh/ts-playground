@@ -1,10 +1,7 @@
-import { Task, PromiseLimitReturnType } from './types'
-type Fn<T> = (...args: any[]) => Promise<T>
-
-function PromiseLimit<T>(
+function PromiseLimit(
   fn: (...args: any[]) => Promise<any>,
   limit: number
-): PromiseLimitReturnType {
+): (...args: any[]) => Promise<any> {
   const queue: (() => void)[] = []
   let activeCount = 0
 
