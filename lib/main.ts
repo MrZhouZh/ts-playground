@@ -2,6 +2,9 @@ import './LazyMan'
 import './LinkedList'
 import './promiseLimit'
 import './Scheduler'
+import './deepClone'
+import './quickSort'
+import './formatMoney'
 
 export function setupCounter(element: HTMLButtonElement) {
   let counter = 0
