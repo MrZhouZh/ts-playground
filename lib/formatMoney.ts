@@ -35,4 +35,5 @@ function formatMoney(money: number): string {
 console.group('formatMoney')
 console.log(formatMoney(-871231.3)) // -871,231.3
 console.log(formatMoney(+8712310000.003)) // 8,712,310,000.003
+console.log(formatMoney(8712310000)) // 8,712,310,000.003
 console.groupEnd()
