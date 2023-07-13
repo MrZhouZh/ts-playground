@@ -142,7 +142,7 @@ class LinkedListNode<T> {
     this.prev = prev
   }
 }
-
+console.group('linkedlist')
 const linkedList = new LinkedList()
 linkedList.insertToHead('12')
 linkedList.insertToHead('www')
@@ -154,5 +154,6 @@ console.log(linkedList.findByIndex(0))
 // Head <-> woo <-> www <-> 12 <-> Tail
 console.log(linkedList.toString())
 console.log(linkedList)
+console.groupEnd()
 
 

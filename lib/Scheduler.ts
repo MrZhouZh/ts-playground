@@ -51,6 +51,7 @@ class Scheduler implements SchedulerInterface {
   }
 }
 
+console.group('scheduler')
 const instance = new Scheduler(2)
 const addTask = (time: number, order: string) => {
   instance.add(() => 
@@ -68,6 +69,7 @@ addTask(1000, '1')
 addTask(500, '2')
 addTask(300, '3')
 addTask(400, '4')
+console.groupEnd()
 
 // start 1
 // start 2
